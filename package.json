@@ -7,10 +7,14 @@
     "withTags": "npx codeceptjs run --grep $TAG",
     "test:headless": "HEADLESS=true npx codeceptjs run --grep $TAG",
     "lint:check": "eslint . && echo 'Please fix linting issues before pushing code if exists`'",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prepare": "husky"
   },
   "lint-staged": {
-    "package-lock.json": "echo 'Error: package-lock.json changes are not allowed.' && exit 1"
+    "*.js": [
+      "eslint --max-warnings=0",
+      "git add"
+    ]
   },
   "keywords": [],
   "author": "Akhil Srinivas",
@@ -28,7 +32,7 @@
     "eslint": "^9.9.1",
     "globals": "^15.9.0",
     "husky": "^9.1.5",
-    "lint-staged": "^15.2.9",
+    "lint-staged": "^15.2.10",
     "playwright": "^1.46.0"
   }
 }
