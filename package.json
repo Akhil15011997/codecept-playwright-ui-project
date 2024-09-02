@@ -6,7 +6,7 @@
     "test": "npx codeceptjs run --grep @runAll",
     "withTags": "npx codeceptjs run --grep $TAG",
     "test:headless": "HEADLESS=true npx codeceptjs run --grep $TAG",
-    "lint": "eslint .",
+    "lint:check": "eslint . && echo 'Please fix linting issues before pushing code if exists`'",
     "postinstall": "husky install"
   },
   "lint-staged": {
@@ -21,11 +21,11 @@
     "@babel/preset-env": "^7.25.3",
     "@babel/register": "^7.24.6",
     "@codeceptjs/allure-legacy": "^1.0.2",
-    "@eslint/js": "^9.9.0",
+    "@eslint/js": "^9.9.1",
     "@shelex/cypress-allure-plugin": "^2.40.2",
     "allure-commandline": "^2.30.0",
     "codeceptjs": "^3.6.5",
-    "eslint": "^9.9.0",
+    "eslint": "^9.9.1",
     "globals": "^15.9.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",

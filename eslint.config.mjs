@@ -14,7 +14,7 @@ export default [
         When: "readonly",     
         actor: "readonly",    
         process: "readonly",  
-        locate: "locate",
+        locate: "readonly",
         ...globals.browser,   
       }
     },
