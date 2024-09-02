@@ -6,6 +6,8 @@
     "test": "pnpm exec codeceptjs run --grep @runAll",
     "test:headless:tag": "HEADLESS=true pnpm exec codeceptjs run --grep",
     "test:tag": "pnpm exec codeceptjs run --grep",
+    "test:staging:tag": "ENVIRONMENT=staging pnpm exec codeceptjs run --grep",
+    "test:prod:tag": "ENVIRONMENT=prod pnpm exec codeceptjs run --grep",
     "lint": "eslint . && echo 'Please fix linting issues before pushing code if exists'",
     "postinstall": "husky install",
     "prepare": "husky"

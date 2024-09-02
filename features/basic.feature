@@ -1,6 +1,6 @@
 @aTag @runAll
 
-Feature: Business rules
+Feature: Launch Google Webpage
 
 @thisIsMyTag
   Scenario: do something

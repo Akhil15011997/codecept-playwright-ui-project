@@ -20,8 +20,8 @@ exports.config = {
       keepCookies: true,
       url: 'http://localhost',
       show: true,
-      trace: 'off', // Enable tracing
-      video: 'off', // Enable Video Recording
+    //  trace: 'off', // Enable tracing
+    //  video: 'off', // Enable Video Recording
     }
   },
   include: {

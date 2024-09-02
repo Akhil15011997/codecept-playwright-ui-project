@@ -1,7 +1,6 @@
 const { pageFile1 } = inject();
 
 Given('I have a defined step', async () => {
-  // I.amOnPage(urlProvider.getEdUrl('ADMIN_CLASS_REPORTS'));
   await pageFile1.openWebPage();
 });
 

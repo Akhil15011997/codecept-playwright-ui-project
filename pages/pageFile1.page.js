@@ -1,11 +1,12 @@
 const { I } = inject();
+const { pageURLs } = require('../configs/environmentFile');
 
 module.exports = {
 
   searchButton: locate('//textarea[@title="Search"]'),
 
   async openWebPage () {
-    await I.amOnPage("https://www.google.com");
+    await I.amOnPage(pageURLs.GOOGLE_URL);
     console.log("the page loaded");
     await I.waitForPageLoad();
   },
@@ -13,6 +14,5 @@ module.exports = {
   async superStep () {
     await I.clickWhenClickable(this.searchButton);
     await I.fillField(this.searchButton,"I am going to type say whattttt");
-    await I.clickWhenClickable('//a[contains(text(),"this locator does not exist)]"');
   }
 }
