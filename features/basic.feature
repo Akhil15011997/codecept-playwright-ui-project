@@ -1,4 +1,4 @@
-@aTag
+@aTag @runAll
 
 Feature: Business rules
 
