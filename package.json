@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx codeceptjs run --grep @runAll",
-    "withTags": "npx codeceptjs run --grep $TAG",
-    "test:headless": "HEADLESS=true npx codeceptjs run --grep $TAG",
-    "lint:check": "eslint . && echo 'Please fix linting issues before pushing code if exists`'",
+    "test": "pnpm exec codeceptjs run --grep @runAll",
+    "test:headless:tag": "HEADLESS=true pnpm exec codeceptjs run --grep",
+    "test:tag": "pnpm exec codeceptjs run --grep",
+    "lint": "eslint . && echo 'Please fix linting issues before pushing code if exists'",
     "postinstall": "husky install",
     "prepare": "husky"
   },
