@@ -20,6 +20,8 @@ exports.config = {
       keepCookies: true,
       url: 'http://localhost',
       show: true,
+      trace: 'off', // Enable tracing
+      video: 'off', // Enable Video Recording
     }
   },
   include: {
@@ -35,18 +37,6 @@ exports.config = {
     steps: getStepDefinitions,
   },
   plugins: {
-    tryTo: {
-      enabled: true
-    },
-    retryFailedStep: {
-      enabled: true
-    },
-    retryTo: {
-      enabled: true
-    },
-    eachElement: {
-      enabled: true
-    },
     pauseOnFail: {},
     allure: {
       enabled: true,

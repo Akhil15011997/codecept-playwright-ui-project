@@ -13,5 +13,6 @@ module.exports = {
   async superStep () {
     await I.clickWhenClickable(this.searchButton);
     await I.fillField(this.searchButton,"I am going to type say whattttt");
+    await I.clickWhenClickable('//a[contains(text(),"this locator does not exist)]"');
   }
 }
