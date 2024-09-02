@@ -15,4 +15,4 @@ The following commands can be used for testing :
 
 `pnpm test:prod:tag @thisIsMyTag` or `npm test` for running the scripts where `@allScripts` can be changed to any custom tags which can be added to the featurefile and `prod` can also be `staging` environment
 `pnpm test:headless:tag @thisIsMyTag` similar to the above command but the scripts will run in headless mode with default as `staging` environment
-`pnpm lint` to find any linting issues (Note: You will not be able to commit if there are any linting issues. For linting rules related to this project please check __eslint.config.mjs__ file
+`pnpm lint` to find any linting issues. Note: You will not be able to commit if there are any linting issues. For linting rules related to this project please check __eslint.config.mjs__ file
