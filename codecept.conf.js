@@ -58,6 +58,5 @@ exports.config = {
   reporters: [
     'allure'
   ],
-  tests: 'features/*.feature',
   name: 'codecept-playwright-project'
 }
