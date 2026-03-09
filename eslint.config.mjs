@@ -9,13 +9,14 @@ export default [
       // Declare variables as globals to avoid no-undef errors
       globals: {
         __dirname: "readonly",
-        inject: "readonly",   
-        Given: "readonly",    
-        When: "readonly",     
-        actor: "readonly",    
-        process: "readonly",  
+        inject: "readonly",
+        Given: "readonly",
+        When: "readonly",
+        Then: "readonly",
+        actor: "readonly",
+        process: "readonly",
         locate: "readonly",
-        ...globals.browser,   
+        ...globals.browser,
       }
     },
     rules: {

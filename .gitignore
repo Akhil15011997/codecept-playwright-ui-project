@@ -1,3 +1,12 @@
 /node_modules/*
 /reports/*
 /reports/trace/*
+
+# Visual Regression - Keep baselines, ignore diffs
+__snapshots__/**/*-diff.png
+__snapshots__/**/*-actual.png
+__image_snapshots__/**/*-diff.png
+# Uncomment the line below if you want to store baselines externally (S3/Azure/GCS)
+# __snapshots__/
+videos/
+trace/

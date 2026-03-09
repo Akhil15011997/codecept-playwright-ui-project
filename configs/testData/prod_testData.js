@@ -1,12 +1,12 @@
 module.exports = {
   users: {
-    admin: {
-      username: "prodAdmin",
-      password: "prodAdminPassword",
+    validUser: {
+      email: "anewTestUser@yopmail.com",
+      password: "Password@1",
     },
-    user: {
-      username: "prodUser",
-      password: "prodUserPassword",
+    invalidUser: {
+      email: "invalid@email.com",
+      password: "WrongPassword",
     },
   },
-}
+};
