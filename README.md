@@ -61,7 +61,7 @@
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd codecept-playwright-project
+cd codecept-playwright-ui-project
 
 # Install dependencies
 pnpm install
@@ -594,7 +594,7 @@ pnpm test:headless:tag @critical     # Headless mode
 ## 🏗️ Project Structure
 
 ```
-codecept-playwright-project/
+codecept-playwright-ui-project/
 ├── codecept.conf.js              # Main CodeceptJS configuration
 ├── package.json                  # Dependencies and npm scripts
 ├── .husky/                       # Git hooks (pre-commit linting)

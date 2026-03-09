@@ -110,5 +110,5 @@ exports.config = {
   reporters: [
     'allure'
   ],
-  name: 'codecept-playwright-project'
+  name: 'codecept-playwright-ui-project'
 }
