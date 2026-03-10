@@ -857,8 +857,6 @@ ENVIRONMENT=staging              # Target environment
 
 ## 📄 License
 
-[Your License Here]
-
 ---
 
 ## 👥 Contributing
